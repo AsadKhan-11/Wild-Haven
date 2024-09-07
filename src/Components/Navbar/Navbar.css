@@ -1,0 +1,26 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  background-color: aquamarine;
+  position: sticky;
+  top: 0;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.nav-header {
+  font-size: 24px;
+}
