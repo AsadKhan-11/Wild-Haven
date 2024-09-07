@@ -4,9 +4,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 100px;
-  background-color: aquamarine;
-  position: sticky;
+  background-color: transparent;
+  position: fixed;
   top: 0;
+  z-index: 5;
 }
 
 .links {
@@ -17,10 +18,15 @@
 }
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 18px;
+
+  &:hover {
+    color: rgb(46, 46, 199);
+  }
 }
 
 .nav-header {
   font-size: 24px;
+  color: white;
 }
