@@ -7,10 +7,8 @@ function Closing() {
         <h3 className="closing-header">Your Exploration Starts Here</h3>
 
         <p className="closing-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-          sapiente velit et libero sit deleniti itaque vitae id nostrum,
-          perferendis nesciunt accusantium sed veniam alias laudantium a
-          distinctio.
+          Explore, engage, and inspire others to protect the beauty and
+          diversity of our natural habitats.
         </p>
         <hr className="closing-line" />
         <div className="closing-info-container">

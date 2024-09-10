@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100vw;
   background-image: url("../Closing/images/mountain2.jpg");
+  position: relative;
   /* mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%); */
   background-position: center;
@@ -11,6 +12,7 @@
 .closing-container {
   position: absolute;
   left: 50%;
+  top: 10%;
   transform: translate(-50%, 0);
   display: flex;
   flex-direction: column;
