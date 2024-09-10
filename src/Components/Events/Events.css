@@ -1,15 +1,16 @@
 .events {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   color: grey;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .events-container {
-  margin-top: 500px;
+  margin: 300px 0 200px;
   width: 800px;
   display: flex;
   align-items: center;
@@ -62,6 +63,7 @@
 
 .event-info {
   height: 200px;
+
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -95,5 +97,4 @@
 }
 .event-text {
   font-size: 12px;
-  width: 400px;
 }

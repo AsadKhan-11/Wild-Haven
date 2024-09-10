@@ -1,0 +1,37 @@
+.closing-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../Closing/images/mountain2.jpg");
+  /* mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%); */
+  background-position: center;
+  background-size: cover;
+}
+
+.closing-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+}
+
+.closing-info-container {
+  display: flex;
+  gap: 80px;
+}
+
+.closing-text,
+.closing-info-container {
+  color: rgb(78, 78, 78);
+}
+
+.closing-line {
+  border: 1px solid rgb(112, 112, 112);
+
+  width: 450px;
+}
