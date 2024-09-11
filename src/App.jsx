@@ -6,6 +6,7 @@ import Home from "./Components/Home/Home";
 import Events from "./Components/Events/Events";
 import Closing from "./Components/Closing/Closing";
 import Footer from "./Components/Footer/Footer";
+import Camp from "./Components/Camp/Camp";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <Camp />
       <Events />
       <Closing />
       <Footer />

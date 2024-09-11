@@ -1,0 +1,38 @@
+.camp {
+  height: 120vh;
+  background-image: url("./images/camp2.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.camp-txt {
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  color: white;
+  width: 450px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 20px;
+}
+
+.camp-info {
+  display: flex;
+  gap: 20px;
+  color: white;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+}
+
+.camp-name {
+  width: 100px;
+}
+
+.camp-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}

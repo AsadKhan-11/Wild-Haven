@@ -5,10 +5,10 @@ function Navbar() {
     <nav className="navbar">
       <h1 className="nav-header">Wild Haven</h1>
       <div className="links">
-        <a href="" className="nav-link">
-          About us
+        <a href="#Camp" className="nav-link">
+          About Camp
         </a>
-        <a href="" className="nav-link">
+        <a href="#Events" className="nav-link">
           Events
         </a>
         <a href="" className="nav-link">

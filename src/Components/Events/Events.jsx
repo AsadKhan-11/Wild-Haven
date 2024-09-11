@@ -5,7 +5,7 @@ import leaf from "./Images/leaf.jpg";
 
 function Events() {
   return (
-    <div className="events">
+    <div className="events" id="Events">
       <div className="events-container">
         {data.map((datas, index) => {
           return (
