@@ -3,8 +3,8 @@
   width: 100vw;
   background-image: url("../Closing/images/mountain2.jpg");
   position: relative;
-  /* mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%); */
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
   background-position: center;
   background-size: cover;
 }
@@ -29,11 +29,11 @@
 
 .closing-text,
 .closing-info-container {
-  color: rgb(78, 78, 78);
+  color: rgb(58, 58, 58);
 }
 
 .closing-line {
-  border: 1px solid rgb(112, 112, 112);
+  border: 1px solid rgb(58, 58, 58);
 
   width: 450px;
 }

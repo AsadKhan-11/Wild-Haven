@@ -1,7 +1,7 @@
 .events {
   height: 100%;
   width: 100vw;
-  color: grey;
+  color: rgb(58, 58, 58);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,8 +9,18 @@
   position: relative;
 }
 
+.rowing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  position: absolute;
+  left: 21%;
+  top: 5%;
+}
+
 .events-container {
-  margin: 300px 0 200px;
+  margin: 250px 0 200px;
   width: 800px;
   display: flex;
   align-items: center;
@@ -91,10 +101,32 @@
   font-size: 14px;
 }
 
-.event-header {
+.event-header,
+.rowing-txt {
   font-size: 18px;
   color: black;
 }
 .event-text {
   font-size: 12px;
+}
+.leaf1 {
+  top: 30%;
+  left: 10%;
+}
+
+.leaf {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  filter: drop-shadow(10px 0px 10px rgb(114, 114, 114));
+}
+.leaf2 {
+  top: 60%;
+  right: 10%;
+}
+
+.rowing {
+  height: 60px;
+  width: 60px;
+  transform: rotate(50deg);
 }

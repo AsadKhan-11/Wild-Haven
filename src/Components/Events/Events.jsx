@@ -1,11 +1,19 @@
 import React from "react";
 import "./Events.css";
 import data from "./Data";
-import leaf from "./Images/leaf.jpg";
+import leaf from "./Images/leaf.png";
+import leaf2 from "./Images/leaf2.png";
+import rowing from "./Images/rowing.svg";
 
 function Events() {
   return (
     <div className="events" id="Events">
+      <div className="rowing-container">
+        <img src={rowing} className="rowing" />
+        <h3 className="rowing-txt">Top Things to do in Park</h3>
+      </div>
+      <img src={leaf} className="leaf leaf1" />
+      <img src={leaf2} className="leaf leaf2 " />
       <div className="events-container">
         {data.map((datas, index) => {
           return (

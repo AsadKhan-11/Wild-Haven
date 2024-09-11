@@ -1,6 +1,16 @@
 .camp {
   height: 120vh;
   background-image: url("./images/camp2.jpg");
+  /* mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgb(214, 214, 214) 20%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgb(180, 180, 180) 20%
+  ); */
   background-position: center;
   background-size: cover;
   position: relative;
