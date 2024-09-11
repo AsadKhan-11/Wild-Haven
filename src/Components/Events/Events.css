@@ -20,7 +20,7 @@
 }
 
 .events-container {
-  margin: 250px 0 200px;
+  margin: 250px 0 100px;
   width: 800px;
   display: flex;
   align-items: center;
@@ -129,4 +129,5 @@
   height: 60px;
   width: 60px;
   transform: rotate(50deg);
+  opacity: 0.6;
 }

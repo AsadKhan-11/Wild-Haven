@@ -7,6 +7,7 @@ import Events from "./Components/Events/Events";
 import Closing from "./Components/Closing/Closing";
 import Footer from "./Components/Footer/Footer";
 import Camp from "./Components/Camp/Camp";
+import Animals from "./Components/Animals/Animals";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <Animals />
       <Camp />
       <Events />
       <Closing />
