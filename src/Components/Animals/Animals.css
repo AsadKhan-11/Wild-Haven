@@ -40,9 +40,14 @@
 }
 
 .animals-txt {
-  color: rgb(58, 58, 58);
+  color: rgb(99, 99, 99);
   font-size: 14px;
   width: 600px;
+  display: none;
+}
+
+.animals-txt.active {
+  display: block;
 }
 
 .animals-btn {
