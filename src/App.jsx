@@ -7,7 +7,7 @@ import Events from "./Components/Events/Events";
 import Closing from "./Components/Closing/Closing";
 import Footer from "./Components/Footer/Footer";
 import Camp from "./Components/Camp/Camp";
-import Animals from "./Components/Animals/Animals";
+import Animals from "./Components/Animals/Animals.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
