@@ -23,7 +23,7 @@ function App() {
       {loading ? (
         <BounceLoader color="blue" loading className="spinner" />
       ) : (
-        <div>
+        <div className="overall">
           <Navbar />
           <Home />
           <Animals />

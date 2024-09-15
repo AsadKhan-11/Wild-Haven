@@ -7,3 +7,31 @@ body {
   top: 40%;
   left: 45%;
 }
+
+.overall::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 10%;
+  left: -40px;
+
+  top: 580px;
+  z-index: 1;
+  background: rgba(1, 1, 1, 0.8);
+  z-index: 20;
+  filter: blur(10px);
+}
+
+.overall::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 10%;
+  left: -40px;
+
+  top: 1220px;
+  z-index: 1;
+  background: rgba(1, 1, 1, 0.8);
+  z-index: 20;
+  filter: blur(10px);
+}
