@@ -29,8 +29,8 @@ function Navbar() {
         <a href="#Events" className="nav-link">
           Events
         </a>
-        <a href="" className="nav-link">
-          Sign in
+        <a href="#Animals" className="nav-link">
+          Animals
         </a>
       </div>
     </nav>

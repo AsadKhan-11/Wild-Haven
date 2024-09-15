@@ -19,7 +19,7 @@ function Animals() {
   };
 
   return (
-    <div className="animals">
+    <div className="animals" id="Animals">
       <div className="animals-container">
         <div className="animals-info">
           {Names.map((name, index) => (

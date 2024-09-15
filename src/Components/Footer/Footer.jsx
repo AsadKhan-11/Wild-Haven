@@ -5,13 +5,13 @@ function Footer() {
     <div className="footer">
       <h1 className="nav-header">Wild Haven</h1>
       <div className="links">
-        <a href="" className="footer-link">
+        <a href="#Camp" className="footer-link">
           About us
         </a>
-        <a href="" className="footer-link">
+        <a href="#Events" className="footer-link">
           Events
         </a>
-        <a href="" className="footer-link">
+        <a href="#Animals" className="footer-link">
           Animals
         </a>
       </div>
