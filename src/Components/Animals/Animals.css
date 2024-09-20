@@ -23,9 +23,9 @@
   left: -40px;
 
   top: -10px;
-  z-index: 20;
+  z-index: 10;
   background: rgba(1, 1, 1, 0.7);
-  z-index: 20;
+
   filter: blur(15px);
 }
 
@@ -37,9 +37,8 @@
   left: -40px;
 
   bottom: -15px;
-  z-index: 20;
   background: rgba(1, 1, 1, 0.7);
-  z-index: 20;
+  z-index: 10;
   filter: blur(15px);
 }
 

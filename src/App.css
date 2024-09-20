@@ -18,7 +18,7 @@ body {
   top: 580px;
   z-index: 1;
   background: rgba(1, 1, 1, 0.8);
-  z-index: 20;
+  z-index: 10;
   filter: blur(10px);
 }
 
@@ -32,6 +32,6 @@ body {
   top: 1220px;
   z-index: 1;
   background: rgba(1, 1, 1, 0.8);
-  z-index: 20;
+  z-index: 10;
   filter: blur(10px);
 }

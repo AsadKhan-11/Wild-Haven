@@ -7,7 +7,7 @@
   background-color: transparent;
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 15;
   transition: all 2s ease;
 }
 .navbar.scrolled {
@@ -32,4 +32,43 @@
 .nav-header {
   font-size: 24px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 50px; /* Reduce padding for smaller screens */
+  }
+
+  .nav-header {
+    font-size: 20px; /* Smaller font size */
+  }
+
+  .links {
+    gap: 20px; /* Reduce gap between links */
+  }
+
+  .nav-link {
+    font-size: 16px; /* Smaller text size for nav links */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column; /* Stack the items vertically */
+    padding: 10px 20px; /* Further reduce padding */
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-header {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
 }
