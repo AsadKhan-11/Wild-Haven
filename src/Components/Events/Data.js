@@ -6,7 +6,7 @@ const data = [
   {
     header: "Special Private Tour",
     img: img1,
-    text: "loremvjlslknvkldsnlvnlsdnv slmn vlksn  sv dlkvklsv lk klnklndvklnl ls kl n slk kskl klsnkldnvlk slkkl",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, reprehenderit atque. Exercitationem, dolore omnis reiciendis at fugiat unde autem, ut repellendus iure id quasi minus. Consectetur culpa laboriosam laudantium fuga!",
     price: "$599",
     per: "day",
     views: "18k",
@@ -15,7 +15,7 @@ const data = [
   {
     header: "Customized Group Hiking",
     img: img2,
-    text: "loremvjl loremvjlslknvkldsnlvnlsdnvloremvjlslknvkldsnlvnlsdnv loremvjlslknvkldsnlvnlsdnvslmn vlksn  sv dlkvklsv lk klnklndvklnl ls kl n slk kskl klsnkldnvlk slkkl",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, reprehenderit atque. Exercitationem, dolore omnis reiciendis at fugiat unde autem, ut repellendus iure id quasi minus. Consectetur culpa laboriosam laudantium fuga!",
     price: "$399",
     per: "group",
     views: "5k",
@@ -24,7 +24,7 @@ const data = [
   {
     header: "Drift and Flow",
     img: img3,
-    text: "loremvjlslknvkldsnlvnlsdnv slmn vlksn  sv dlkvklsv lk klnklndvklnl ls kl n slk kskl klsnkldnvlk slkkl",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, reprehenderit atque. Exercitationem, dolore omnis reiciendis at fugiat unde autem, ut repellendus iure id quasi minus. Consectetur culpa laboriosam laudantium fuga!",
     price: "$99",
     per: "person",
     views: "2k",

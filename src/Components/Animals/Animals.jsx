@@ -1,21 +1,41 @@
 import React, { useState } from "react";
 import forest from "./images/forest.png";
 import Names from "./Names.js";
+import { motion, AnimatePresence } from "framer-motion";
 
 import "./Animals.css";
+
 function Animals() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState("next");
 
-  const [direction, setDirection] = useState("");
   const nextImage = () => {
-    setDirection("next");
-
-    setCurrentIndex((currentIndex) => currentIndex + 1) % Names.length;
+    if (currentIndex < Names.length - 1) {
+      setDirection("next");
+      setCurrentIndex((prev) => prev + 1);
+    }
   };
-  const prevImage = () => {
-    setDirection("prev");
 
-    setCurrentIndex((currentIndex) => currentIndex - 1) % Names.length;
+  const prevImage = () => {
+    if (currentIndex > 0) {
+      setDirection("prev");
+      setCurrentIndex((prev) => prev - 1);
+    }
+  };
+
+  const variants = {
+    enter: (direction) => ({
+      x: direction === "next" ? 500 : -500,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction) => ({
+      x: direction === "next" ? -500 : 500,
+      opacity: 0,
+    }),
   };
 
   return (
@@ -23,47 +43,69 @@ function Animals() {
       <div className="animals-wrapper">
         <div className="animals-container">
           <div className="animals-info">
-            {Names.map((name, index) => (
-              <div
-                className={`animals-icon ${
-                  index === currentIndex ? "active" : ""
-                }`}
-                key={index}
+            <AnimatePresence custom={direction} mode="wait">
+              <motion.div
+                className="animals-icon active"
+                key={currentIndex}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.5 }}
               >
                 <img
-                  src={name.icon}
-                  alt={`animal-${index}`}
+                  src={Names[currentIndex].icon}
+                  alt={`animal-${currentIndex}`}
                   className="animals-icon-img"
                 />
-              </div>
-            ))}
-            <h2 className="animals-header">Discover Captivating Wildlife</h2>
-            {Names.map((name, index) => (
-              <p
-                className={`animals-txt ${
-                  index === currentIndex ? "active" : ""
-                }`}
-                key={index}
+              </motion.div>
+            </AnimatePresence>
+            <AnimatePresence custom={direction} mode="wait">
+              <motion.h2
+                className="animals-header"
+                key={currentIndex}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.6 }}
               >
-                {name.txt}
-              </p>
-            ))}
+                Discover Captivating Wildlife
+              </motion.h2>
+            </AnimatePresence>
+            <AnimatePresence custom={direction} mode="wait">
+              <motion.p
+                className="animals-txt active"
+                key={currentIndex}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.8 }}
+              >
+                {Names[currentIndex].txt}
+              </motion.p>
+            </AnimatePresence>
+
             <div className="btn-container">
               <button
                 className={`animals-btn left-btn${
                   currentIndex === 0 ? " disabled" : ""
                 }`}
-                disabled={currentIndex === 0 || Names.length === 0}
                 onClick={prevImage}
+                disabled={currentIndex === 0}
               >
                 <ion-icon name="arrow-back-outline"></ion-icon>
               </button>
               <button
                 className={`animals-btn right-btn${
-                  currentIndex == Names.length - 1 ? " disabled" : ""
+                  currentIndex === Names.length - 1 ? " disabled" : ""
                 }`}
-                disabled={currentIndex === Names.length - 1}
                 onClick={nextImage}
+                disabled={currentIndex === Names.length - 1}
               >
                 <ion-icon name="arrow-forward-outline"></ion-icon>
               </button>
@@ -71,18 +113,24 @@ function Animals() {
           </div>
 
           <div className="slider">
-            {Names.map((name, index) => {
-              return (
-                <div
-                  className={`animals-img-container ${
-                    index === currentIndex ? "active" : ""
-                  } ${direction}`}
-                  key={index}
-                >
-                  <img src={name.img} className="animals-img" />
-                </div>
-              );
-            })}
+            <AnimatePresence custom={direction} mode="wait">
+              <motion.div
+                key={currentIndex}
+                className="animals-img-container active"
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.2 }}
+              >
+                <img
+                  src={Names[currentIndex].img}
+                  alt={`animal-${currentIndex}`}
+                  className="animals-img"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </div>
